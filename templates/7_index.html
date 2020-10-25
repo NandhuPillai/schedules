@@ -1,0 +1,79 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Home
+{% endblock %}
+
+{% block main %}
+    <table class="table table-hover table-dark">
+      <thead>
+        <tr>
+          <th scope="col">Pd #</th>
+          <th scope="col">Pd Name</th>
+          <th scope="col">Start Time</th>
+          <th scope="col">End Time</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">1</th>
+          <td>{{period1}}</td>
+          <td>{{period1_stime}}</td>
+          <td>{{period1_ftime}}</td>
+        </tr>
+        <tr>
+          <th scope="row">2</th>
+          <td>{{period2}}</td>
+          <td>{{period2_stime}}</td>
+          <td>{{period2_ftime}}</td>
+        </tr>
+        <tr>
+          <th scope="row">3</th>
+          <td>{{period3}}</td>
+          <td>{{period3_stime}}</td>
+          <td>{{period3_ftime}}</td>
+        </tr>
+        <tr>
+          <th scope="row">4</th>
+          <td>{{period4}}</td>
+          <td>{{period4_stime}}</td>
+          <td>{{period4_ftime}}</td>
+        </tr>
+        <tr>
+          <th scope="row">5</th>
+          <td>{{period5}}</td>
+          <td>{{period5_stime}}</td>
+          <td>{{period5_ftime}}</td>
+        </tr>
+        <tr>
+          <th scope="row">6</th>
+          <td>{{period6}}</td>
+          <td>{{period6_stime}}</td>
+          <td>{{period6_ftime}}</td>
+        </tr>
+        <tr>
+          <th scope="row">7</th>
+          <td>{{period7}}</td>
+          <td>{{period7_stime}}</td>
+          <td>{{period7_ftime}}</td>
+        </tr>
+      </tbody>
+    </table>
+    <table class="table table-hover table-dark">
+      <thead>
+        <tr>
+          <th scope="col">Pd #</th>
+          <th scope="col">Bday Pd Name</th>
+          <th scope="col">Start Time</th>
+          <th scope="col">End Time</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">{{bperiod_num}}</th>
+          <td>{{bperiod}}</td>
+          <td>{{bperiod_start}}</td>
+          <td>{{bperiod_finish}}</td>
+        </tr>
+      </tbody>
+{% endblock %}

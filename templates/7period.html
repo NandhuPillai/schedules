@@ -1,0 +1,140 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Create
+{% endblock %}
+
+{% block java %}
+    <script type="text/javascript">
+
+        function Check() {
+            if (document.getElementById('bone').checked) {
+                    document.getElementById('btone').style.display = 'inline-block';
+            }
+            else
+            {
+                document.getElementById('btone').style.display = 'none';
+                document.getElementById('btone').value="";
+            }
+
+            if (document.getElementById('btwo').checked) {
+                    document.getElementById('bttwo').style.display = 'inline-block';
+            }
+            else document.getElementById('bttwo').style.display = 'none';
+
+            if (document.getElementById('bthree').checked) {
+                    document.getElementById('btthree').style.display = 'inline-block';
+            }
+            else document.getElementById('btthree').style.display = 'none';
+
+            if (document.getElementById('bfour').checked) {
+                    document.getElementById('btfour').style.display = 'inline-block';
+            }
+            else document.getElementById('btfour').style.display = 'none';
+
+            if (document.getElementById('bfive').checked) {
+                    document.getElementById('btfive').style.display = 'inline-block';
+            }
+            else document.getElementById('btfive').style.display = 'none';
+
+            if (document.getElementById('bsix').checked) {
+                    document.getElementById('btsix').style.display = 'inline-block';
+            }
+            else document.getElementById('btsix').style.display = 'none';
+
+            if (document.getElementById('bseven').checked) {
+                    document.getElementById('btseven').style.display = 'inline-block';
+            }
+            else document.getElementById('btseven').style.display = 'none';
+            }
+
+
+
+
+    </script>
+{% endblock %}
+
+{% block main %}
+    <form action="/7period" method="post">
+        <div>
+            <label>Period 1:
+                <input autocomplete="off" name="1name" placeholder="Name" type="text" min="1"  required/>
+                <label for="label">Start: <label>
+                <input type="time" id="label" name="speriod1" />
+                <label for="label">Finish: <label>
+                <input type="time" id="label" name="fperiod1" />
+                <input type="radio" onclick ="javascript:Check();" id="bone" name="bday" value="bone"/>
+                <input autocomplete="off" id="btone" name="b1name" placeholder="Bday Name" type="text" min="1" style="display: none"  />
+            </label>
+        </div>
+        <div>
+            <label>Period 2:
+                <input autocomplete="off" name="2name" placeholder="Name" type="text" min="1" required />
+                <label for="label">Start: <label>
+                <input type="time" id="label" name="speriod2" />
+                <label for="label">Finish: <label>
+                <input type="time" id="label" name="fperiod2" />
+                <input type="radio" onclick ="javascript:Check();" id="btwo" name="bday" value="btwo"/>
+                <input autocomplete="off" id="bttwo" name="b2name" placeholder="Bday Name" type="text" min="1" style="display: none"  />
+            </label>
+        </div>
+        <div>
+            <label>Period 3:
+                <input autocomplete="off" name="3name" placeholder="Name" type="text" min="1" required />
+                <label for="label">Start: <label>
+                <input type="time" id="label" name="speriod3" />
+                <label for="label">Finish: <label>
+                <input type="time" id="label" name="fperiod3" />
+                <input type="radio" onclick ="javascript:Check();" id="bthree" name="bday" value="bthree"/>
+                <input autocomplete="off" id="btthree" name="b3name" placeholder="Bday Name" type="text" min="1" style="display: none;"  />
+            </label>
+        </div>
+        <div>
+            <label>Period 4:
+                <input autocomplete="off" name="4name" placeholder="Name" type="text" min="1" required />
+                <label for="label">Start: <label>
+                <input type="time" id="label" name="speriod4" />
+                <label for="label">Finish: <label>
+                <input type="time" id="label" name="fperiod4" />
+                <input type="radio" onclick ="javascript:Check();" id="bfour" name="bday" value="bfour"/>
+                <input autocomplete="off" id="btfour" name="b4name" placeholder="Bday Name" type="text" min="1" style="display: none;"  />
+            </label>
+        </div>
+        <div>
+            <label>Period 5:
+                <input autocomplete="off" name="5name" placeholder="Name" type="text" min="1" required />
+                <label for="label">Start: <label>
+                <input type="time" id="label" name="speriod5" />
+                <label for="label">Finish: <label>
+                <input type="time" id="label" name="fperiod5" />
+                <input type="radio" onclick ="javascript:Check();" id="bfive" name="bday" value="bfive"/>
+                <input autocomplete="off" id="btfive" name="b5name" placeholder="Bday Name" type="text" min="1" style="display: none;"  />
+            </label>
+        </div>
+        <div>
+            <label>Period 6:
+                <input autocomplete="off" name="6name" placeholder="Name" type="text" min="1" required />
+                <label for="label">Start: <label>
+                <input type="time" id="label" name="speriod6" />
+                <label for="label">Finish: <label>
+                <input type="time" id="label" name="fperiod6" />
+                <input type="radio" onclick ="javascript:Check();" id="bsix" name="bday" value="bsix"/>
+                <input autocomplete="off" id="btsix" name="b6name" placeholder="Bday Name" type="text" min="1" style="display: none"  />
+            </label>
+        </div>
+        <div>
+            <label>Period 7:
+                <input autocomplete="off" name="7name" placeholder="Name" type="text" min="1" required />
+                <label for="label">Start: <label>
+                <input type="time" id="label" name="speriod7" />
+                <label for="label">Finish: <label>
+                <input type="time" id="label" name="fperiod7" />
+                <input type="radio" onclick="javascript:Check();" id="bseven" name="bday" value="bseven"/>
+                <input autocomplete="off" id="btseven" name="b7name" placeholder="Bday Name" type="text" min="1" style="display: none" />
+            </label>
+        </div>
+        <button class="btn btn-success" type="submit">Create!</button>
+    </form>
+
+
+{% endblock %}

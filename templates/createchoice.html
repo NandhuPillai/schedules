@@ -1,0 +1,15 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Choose
+{% endblock %}
+
+{% block main %}
+    <form action="/choose" method="post">
+        <input type="radio" id="seven" name="schedtype" value="seven" required/>
+        <label for="seven">7 Period Schedule</label><br>
+        <input type="radio" id="four" name="schedtype" value="four" required/>
+        <label for="four">4x4 Block Schedule</label><br>
+        <button class="btn btn-success" type="submit">Next</button>
+    </form>
+{% endblock %}

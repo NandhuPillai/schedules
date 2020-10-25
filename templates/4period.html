@@ -1,0 +1,54 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Create
+{% endblock %}
+
+
+{% block main %}
+    <form action="/4period" method="post">
+        <div>
+            <label>Period 1:
+                <input autocomplete="off" name="1name" placeholder="Name" type="text" min="1" required />
+                <label for="label">Start: <label>
+                <input type="time" id="label" name="speriod1" />
+                <label for="label">Finish: <label>
+                <input type="time" id="label" name="fperiod1" />
+                <input autocomplete="off" id="btone" name="b1name" placeholder="Next Semester Alternate" type="text" min="1" style="display: in-line block" required />
+            </label>
+        </div>
+        <div>
+            <label>Period 2:
+                <input autocomplete="off" name="2name" placeholder="Name" type="text" min="1" required />
+                <label for="label">Start: <label>
+                <input type="time" id="label" name="speriod2" />
+                <label for="label">Finish: <label>
+                <input type="time" id="label" name="fperiod2" />
+                <input autocomplete="off" id="bttwo" name="b2name" placeholder="Next Semester Alternate" type="text" min="1" style="display: in-line block" required />
+            </label>
+        </div>
+        <div>
+            <label>Period 3:
+                <input autocomplete="off" name="3name" placeholder="Name" type="text" min="1" required />
+                <label for="label">Start: <label>
+                <input type="time" id="label" name="speriod3" />
+                <label for="label">Finish: <label>
+                <input type="time" id="label" name="fperiod3" />
+                <input autocomplete="off" id="btthree" name="b3name" placeholder="Next Semester Alternate" type="text" min="1" style="display: in-line block;" required />
+            </label>
+        </div>
+        <div>
+            <label>Period 4:
+                <input autocomplete="off" name="4name" placeholder="Name" type="text" min="1" required />
+                <label for="label">Start: <label>
+                <input type="time" id="label" name="speriod4" />
+                <label for="label">Finish: <label>
+                <input type="time" id="label" name="fperiod4" />
+                <input autocomplete="off" id="btfour" name="b4name" placeholder="Next Semester Alternate" type="text" min="1" style="display: in-line block;" required />
+            </label>
+        </div>
+        <button class="btn btn-success" type="submit">Create!</button>
+    </form>
+
+
+{% endblock %}
