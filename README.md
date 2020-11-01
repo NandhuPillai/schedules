@@ -1,2 +1,4 @@
 # schedules
-CS50 final project
+CS50 final project.
+
+This web application is a simple scheduling tool for students in middle school and high school. It can create schedule in two formats, the regular 7 period, and the 4x4 schedule. It was important to include 4x4 since many schools have been trying this new schedule system and with the pandemic even more school have transitioned. When you click on the Create button on the navbar, it will take to to a page to select between 7 period schedule or the 4x4 schedule. Once the user chooses they are taken to a page o fill out the information on their daily schedule. This includes the period name's, period start and finish time. For the 7 period schedule there is an option to have a B day period. For 4x4 there is Alternate period for next Semster as well. The names of the period are the only mandaotry information for them to include. Once the user is done, they click the create button and they are redirected to the home page with their schedule. The users latest entry will be the one on the home screen.
